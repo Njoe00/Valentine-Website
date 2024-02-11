@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   const noButtonStylings = [
-    { src: "/pussy_in_boots.gif" },
+    { src: "/pussy_in_boots.gif", position: "block" },
     {
       position: "absolute",
       top: 0,
@@ -177,15 +177,17 @@ export default function Home() {
                 <button
                   onClick={handleClick}
                   className="bg-gray-200 py-4 px-8 font-bold hover:bg-red-500 z-0 text-nowrap text-center"
-                  style={{
-                    position: noButtonStylings[limitCount].position,
-                    top: noButtonStylings[limitCount].top,
-                    right: noButtonStylings[limitCount].right,
-                    bottom: noButtonStylings[limitCount].bottom,
-                    left: noButtonStylings[limitCount].left,
-                    padding: noButtonStylings[limitCount].padding,
-                    fontSize: noButtonStylings[limitCount].fontSize,
-                  }}
+                  style={
+                    {
+                      position: noButtonStylings[limitCount].position,
+                      top: noButtonStylings[limitCount].top,
+                      right: noButtonStylings[limitCount].right,
+                      bottom: noButtonStylings[limitCount].bottom,
+                      left: noButtonStylings[limitCount].left,
+                      padding: noButtonStylings[limitCount].padding,
+                      fontSize: noButtonStylings[limitCount].fontSize,
+                    } as React.CSSProperties
+                  }
                 >
                   {count === 0 ? "No" : getNoButtonText()}
                 </button>
