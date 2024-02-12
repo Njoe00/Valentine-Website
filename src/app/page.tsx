@@ -145,14 +145,14 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center relative">
       <div className="flex-col flex">
-        <div className="flex items-center gap-4 justify-center z-0">
+        <div className="flex items-center gap-4 justify-center">
           {yesClicked ? (
             <div className="flex items-center justify-normal flex-col">
               <Image
                 src="/love-always-wins.png"
                 width={100}
                 height={100}
-                alt="alt"
+                alt="heart picture"
               />
               <span className="text-4xl font-bold">UwU</span>
             </div>
@@ -176,7 +176,7 @@ export default function Home() {
                 </button>
                 <button
                   onClick={handleClick}
-                  className="bg-gray-200 py-4 px-8 font-bold hover:bg-red-500 z-0 text-nowrap text-center"
+                  className="bg-gray-200 py-4 px-8 font-bold hover:bg-red-500 z-10 text-nowrap text-center"
                   style={
                     {
                       position: noButtonStylings[limitCount].position,
