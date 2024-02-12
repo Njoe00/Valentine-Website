@@ -58,16 +58,16 @@ export default function Home() {
     },
     {
       position: "absolute",
-      top: "24%",
-      left: "40%",
-      right: "40%",
+      top: "0%",
+      left: "auto",
+      right: "42%",
       src: "/pussy_in_boots.gif",
     },
     {
       position: "absolute",
-      top: "59%",
-      left: "40%",
-      right: "40%",
+      bottom: "0%",
+      left: "auto",
+      right: "41%",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -76,6 +76,7 @@ export default function Home() {
       left: "auto",
       right: "auto",
       padding: 25,
+      display: "grid",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -84,6 +85,7 @@ export default function Home() {
       left: "auto",
       right: "auto",
       padding: 15,
+      display: "flex",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -92,6 +94,7 @@ export default function Home() {
       left: "auto",
       right: "auto",
       padding: 10,
+      display: "flex",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -100,6 +103,7 @@ export default function Home() {
       left: "auto",
       right: "auto",
       padding: 5,
+      display: "flex",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -108,6 +112,7 @@ export default function Home() {
       left: "auto",
       right: "auto",
       padding: 0,
+      display: "flex",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -115,8 +120,7 @@ export default function Home() {
       top: "auto",
       left: "auto",
       right: "auto",
-      padding: 106,
-      fontSize: 45,
+      display: "flex",
       src: "/pussy_in_boots.gif",
     },
     {
@@ -124,6 +128,7 @@ export default function Home() {
       top: "auto",
       left: "auto",
       right: "auto",
+      display: "flex",
       src: "/fma_roy_crying.webp",
     },
     {
@@ -131,6 +136,8 @@ export default function Home() {
       top: "auto",
       left: "auto",
       right: "auto",
+      display: "flex",
+      flexDirection: "flex-column",
       src: "/konosuba_evil.gif",
     },
   ];
@@ -166,7 +173,7 @@ export default function Home() {
                 height={400}
                 alt="pussy in boots smoulder"
               />
-              <div>
+              <div className="">
                 <button
                   onClick={handleYesClicked}
                   className="bg-gray-200 py-4 px-8 font-bold hover:bg-green-500"
@@ -185,7 +192,6 @@ export default function Home() {
                       bottom: noButtonStylings[limitCount].bottom,
                       left: noButtonStylings[limitCount].left,
                       padding: noButtonStylings[limitCount].padding,
-                      fontSize: noButtonStylings[limitCount].fontSize,
                     } as React.CSSProperties
                   }
                 >
